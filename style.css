@@ -1,0 +1,79 @@
+* {
+  font-family: Georgia, serif;
+  font-size: large;
+}
+
+.background-img {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* CONTACT DETAILS */
+
+.contact-box a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a[target] {
+  text-decoration: underline #2e2787;
+}
+
+.contact-box {
+  text-align: center;
+  background-color: #e6e6fa;
+  border: 3px solid #2e2787;
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#name {
+  color: #2e2787;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cv {
+  color: #2e2787;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+.main {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main li {
+  list-style: none;
+}
+
+main li::first-letter {
+  text-transform: capitalize;
+}
+
+.circle {
+  display: inline;
+}
+
+h3 {
+  color: #545aa7;
+}
+
+hr {
+  color: #2e2787;
+}
