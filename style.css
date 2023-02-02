@@ -16,6 +16,11 @@
   color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 a[target] {
   text-decoration: underline #2e2787;
 }
@@ -46,7 +51,6 @@ a[target] {
   color: #2e2787;
   font-size: 20px;
   text-align: center;
-  text-decoration: underline;
 }
 
 /* MAIN CONTENT */
@@ -76,4 +80,42 @@ h3 {
 
 hr {
   color: #2e2787;
+}
+
+/* CONTACT FORM */
+
+.form-button {
+  color: #2e2787;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.form-contact {
+  color: #2e2787;
+}
+
+.form-container {
+  width: 400px;
+  margin: auto;
+}
+
+.form-name,
+.form-email,
+.form-number,
+.form-message {
+  color: #545aa7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+  .contact-details {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1080px) {
+  .detail {
+    padding: 0px 5px 0px;
+  }
 }

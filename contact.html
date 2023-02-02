@@ -1,0 +1,91 @@
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+  background="images/background-image.jpeg"
+  style="background-repeat: no-repeat"
+  class="background-img"
+>
+  <div>
+    <a href="index.html"><button class="form-button">Go Back to CV</button></a>
+    <div>
+      <div class="form-container">
+        <div>
+          <h1 class="form-contact">Contact Me</h1>
+          <p>Fill out the form below to send me a message!</p>
+        </div>
+        <div>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="0aa9b828-0639-4458-b396-fa3965184f20"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Web3Forms"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              id=""
+              style="display: none"
+            />
+
+            <div>
+              <label for="name" class="form-name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="form-email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone" class="form-number">Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+44 7264482658"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="form-message">Your Message</label>
+
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="form-button">Send Message</button>
+            </div>
+            <p id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
